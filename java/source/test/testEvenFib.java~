@@ -5,15 +5,12 @@ import production.*;
 public class testEvenFib extends TestCase{
 	EvenFib eFib;
 	
-	public void setUp(){
+	public void setup(){
 		eFib = new EvenFib();
 	}
 	
-	public void testFib(){
+	public void test(){
 		assertEquals(eFib.getFibonacci(6), eFib.getFibonacci(5) + eFib.getFibonacci(4));
-	}
-	
-	public void testSum(){
 		assertEquals(44, eFib.getEvenFibSum(10));
 	}
 }
