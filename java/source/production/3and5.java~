@@ -1,0 +1,30 @@
+package project_Euler;
+
+// Sums all multiples of 3 and 5 below a given upper bound
+public class 3and5(){
+	private int highNum; //highest upper bound
+	
+	public 3and5(int high){
+		highNum = high;
+	}
+	
+	public 3and5(){
+		highNum = 1000;
+	}
+	
+	public int getSumOfMultiplesOfThreeOrFive(){
+		int sum = 0;
+		for( int i =0; i < highNum; i++)
+		{
+			if( i%3 == 0 || i%5 == 0 )
+				sum +=i;
+		}
+		
+		System.out.println(sum);
+		return sum;
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}
